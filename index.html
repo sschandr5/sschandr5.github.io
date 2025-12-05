@@ -18,30 +18,34 @@
       </nav>
     </header>
     <!-- Semantic equivalent: using main tags instead of div -->
-    <main>
-      <h2 class="headline text-primary">Home</h2>
-      <div class="photo-container">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
-          <circle cx="50" cy="50" r="40" fill="#3498db">
-            <animate 
-              attributeName="r" 
-              values="30;40;30" 
-              dur="5s" 
-              repeatCount="indefinite"
-            />
-          </circle>
-        </svg>      
+    <main class="container my-4 p-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="headline">Home</h2>
+            <div class="photo-container">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+                <circle cx="50" cy="50" r="40" fill="#3498db">
+                  <animate 
+                    attributeName="r" 
+                    values="30;40;30" 
+                    dur="5s" 
+                    repeatCount="indefinite"
+                  />
+                </circle>
+              </svg>      
+            </div>
+        <p>This website showcases my resume as well as my interests/passions/hobbies.</p>
+        <p id="js-message">Click the button below to see a fun fact about me!</p>
+        <button id="js-button" aria-describedby="js-message">Click Me</button>
+          <script>
+            document.getElementById('js-button').onclick = function() {
+            document.getElementById('js-message').innerHTML = "I have performed as a percussionist at Disneyland!";
+            document.getElementById('js-button').style.backgroundColor = '#2ecc71';
+            document.getElementById('js-button').style.color = 'white';
+            };
+          </script>
+        </div>
       </div>
-      <p>This website showcases my resume as well as my interests/passions/hobbies.</p>
-      <p id="js-message">Click the button below to see a fun fact about me!</p>
-      <button id="js-button" aria-describedby="js-message">Click Me</button>
-      <script>
-        document.getElementById('js-button').onclick = function() {
-        document.getElementById('js-message').innerHTML = "I have performed as a percussionist at Disneyland!";
-        document.getElementById('js-button').style.backgroundColor = '#2ecc71';
-        document.getElementById('js-button').style.color = 'white';
-        };
-      </script>
     </main>
     <!-- Semantic equivalent: using footer -->
     <footer><p>2025 Chandramouli</p></footer>
