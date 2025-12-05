@@ -44,14 +44,6 @@ nav a:hover, nav a:focus {
   display: flex;
   justify-content: center;
 }
-/* Perceivable content: use responsive image scaling */
-.profile-photo{
-  width: 200px;
-  height: auto;
-  max-width: 100%; /* ensure image doesn't overflow container on small screens */
-  border-radius: 50%;
-  border: 3px solid #3498db;
-}
 
 footer {
   text-align: center;
