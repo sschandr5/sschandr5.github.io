@@ -33,6 +33,15 @@
         </svg>      
       </div>
       <p>This website showcases my resume as well as my interests/passions/hobbies.</p>
+      <p id="js-message">Click the button below to see a fun fact about me!</p>
+      <button id="js-button" aria-describedby="js-message">Click Me</button>
+      <script>
+        document.getElementById('js-button').onclick = function() {
+        document.getElementById('js-message').innerHTML = "I have performed as a percussionist at Disneyland!";
+        document.getElementById('js-button').style.backgroundColor = '#2ecc71';
+        document.getElementById('js-button').style.color = 'white';
+        };
+      </script>
     </main>
     <!-- Semantic equivalent: using footer -->
     <footer><p>2025 Chandramouli</p></footer>
