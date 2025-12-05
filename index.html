@@ -21,8 +21,16 @@
     <main>
       <h2 class="headline text-primary">Home</h2>
       <div class="photo-container">
-        <!-- Perceivable content: updated alt text to be descriptive -->
-        <img src="me.png" alt="A profile picture of Srisurya Chandramouli" class="profile-photo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+          <circle cx="50" cy="50" r="40" fill="#3498db">
+            <animate 
+              attributeName="r" 
+              values="30;40;30" 
+              dur="5s" 
+              repeatCount="indefinite"
+            />
+          </circle>
+        </svg>      
       </div>
       <p>This website showcases my resume as well as my interests/passions/hobbies.</p>
     </main>
